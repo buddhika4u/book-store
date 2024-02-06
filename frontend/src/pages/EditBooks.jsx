@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export const EditBooks = () => {
-  return (
-    <div>EditBooks</div>
-  )
-}
+const EditBooks = () => {
+  return <div>EditBooks</div>;
+};
+
+export default EditBooks;

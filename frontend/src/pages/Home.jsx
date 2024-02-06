@@ -6,7 +6,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 import { BsInfoCircle } from "react-icons/bs";
 import { MdOutlineAddBox, MdOutlineDelete } from "react-icons/md";
 
-export const Home = () => {
+const Home = () => {
   const [books, setBooks] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -87,3 +87,4 @@ export const Home = () => {
     </div>
   );
 };
+export default Home;

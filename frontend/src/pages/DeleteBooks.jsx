@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-export const DeleteBooks = () => {
-  return (
-    <div>DeleteBooks</div>
-  )
-}
+const DeleteBooks = () => {
+  return <div>DeleteBooks</div>;
+};
+
+export default DeleteBooks;
