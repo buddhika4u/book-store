@@ -45,7 +45,7 @@ router.get("/:id", async (req, res) => {
 
     const book = await Book.findById(id);
 
-    return res.status(200).json({ book });
+    return res.status(200).json(book);
   } catch (error) {
     console.log(err.message);
     res.status(500).send({ message: error.message });
@@ -77,11 +77,6 @@ router.put("/:id", async (req, res) => {
 // Route for Delete a Book
 router.delete("/:id", async (req, res) => {
   try {
-    if (!req.body.title || !req.body.author || !req.body.publishYear) {
-      return res.status(400).send({
-        message: "Send all required fields: tite, author, publishYear",
-      });
-    }
     const { id } = req.params;
 
     const result = await Book.findByIdAndDelete(id);
